@@ -1,6 +1,6 @@
 # BIN/IIN look up
 
-Lookup card BIN numbers using https://www.binlist.net
+Lookup card BIN numbers using https://www.daxxteam.com/bin-api
 
 IIN (Issuer Identification Number) is the more modern name.
 
@@ -24,7 +24,7 @@ information.
 Works in browser environments using Browserify or similar.
 
 ```js
-var lookup = require('binlookup')();
+var lookup = require('bin-api')();
 
 // using callbacks
 lookup('45717360',
@@ -73,7 +73,7 @@ You can cache the response using [AsyncCache](https://www.npmjs.com/package/asyn
 or similar:
 
 ```js
-var lookup = require('binlookup')();
+var lookup = require('bin-api')();
 var AsyncCache = require('async-cache');
 
 var cache = new AsyncCache({
